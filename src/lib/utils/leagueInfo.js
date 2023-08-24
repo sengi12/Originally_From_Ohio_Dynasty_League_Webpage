@@ -1,18 +1,17 @@
 /*   STEP 1   */
-export const leagueID = "your_league_id"; // your league ID
-export const leagueName = "your_league_name"; // your league name
-export const dues = 100; // (optional) used in template constitution page
+export const leagueID = "919651662468300800"; // your league ID
+export const leagueName = "Originally From Ohio Dynasty League"; // your league name
+export const dues = 50; // (optional) used in template constitution page
 export const dynasty = true; // true for dynasty leagues, false for redraft and keeper
 export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Founded in 2019, the Originally From Ohio Dynasty League began as a means for many to embark on their first journey into the chasms of building their very own dynasty football franchise. Each year, managers compete to have their names etched in immortal stone as Champions, aiming to avoid the ever-humiliating Toilet Bowl.</p>
+  <p>Some managers built immediate win-now teams, while others began the slow process of building their dream juggernaut dynasty team. Over the years it has become clear that a portion of the league prioritizes youth and draft picks, while the rest gravitate towards the steadfast value of veterans. While some managers have fled from injuries and tumultuous contract negotiations, others bought the dip and built for their future.</p>
+  <p>After years of domination, struggle and humiliation some have been fired to more simpler re-draft leagues, where others have decided to retire whilst at the pinnacle. Nonetheless the league has only gotten stronger. With more passionate managers, the competition has become more intense and more difficult than ever before.</p>
+  <p>Recently there have been massive moves that have shaken the very foundation of the league. With the two time league champ retired, and league activity at an all-time high there is room for a new dynasty to begin.</p>
+  <p>Coming off of a season where the sixth seeded Kyle Clark went into his first playoff appearance only to go on and win his first Championship, there have been a plethora of massive trades, moves and acquisitions that leave this upcoming season to chance...</p>
 `;
 
 /*   STEP 3   */
