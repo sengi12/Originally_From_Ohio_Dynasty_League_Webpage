@@ -97,7 +97,7 @@ export const managers = [
         <p>To compliment this young core, The Ja'Mazing Chase has made a trio of massive moves to acquire the necessary Running Back stable to compete with the best of the best. These moves overall resulted trading three first round draft selections in 2023, 2024 and 2025 for Running Backs Najee Harris, Nick Chubb and Austin Ekeler with one of those trades being the leagues very first four-team trade...</p>
         <p>While these moves have firmly placed this team in a win-now mode, the hardest part of the journey has yet to come as this season unlike any other has seen an arms-race, akin to the AFC, where the top of the top teams have been accumulating talent left and right.</p>
       `,
-      "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
+      "photo": "/managers/mike.jpg", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2015, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "cin", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
