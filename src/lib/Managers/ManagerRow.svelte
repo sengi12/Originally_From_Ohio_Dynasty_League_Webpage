@@ -252,7 +252,6 @@
                 <div class="infoIcon">
                     <img class="infoImg" src={manager.getAvatar} alt="favorite team"/>
                 </div>
-            {/if}
             {:else}
                 <div class="infoIcon question">
                     <img class="infoImg" src="/managers/question.jpg" alt="favorite team"/>
