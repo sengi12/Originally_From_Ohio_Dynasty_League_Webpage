@@ -225,7 +225,7 @@
 <div class="managerContainer">
     <div class="managerConstrained">
         {#if viewManager.managerPhoto == 'self'}
-            <img class="infoChild managerPhoto" src="{viewManager.avatarLink}" alt="manager"/>
+            <img class="managerPhoto" src="/managers/question.jpg" alt="manager"/>
         {:else}
             <img class="managerPhoto" src="{viewManager.photo}" alt="manager"/>
         {/if}
