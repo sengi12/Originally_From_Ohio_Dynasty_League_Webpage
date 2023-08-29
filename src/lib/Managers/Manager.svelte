@@ -224,7 +224,11 @@
 
 <div class="managerContainer">
     <div class="managerConstrained">
-        <img class="managerPhoto" src="{viewManager.photo}" alt="manager"/>
+        {#if viewManager.managerPhoto == 'self'}
+            <img class="managerPhoto" src="{viewManager.avatarLink}" alt="manager"/>
+        {:else}
+            <img class="managerPhoto" src="{viewManager.photo}" alt="manager"/>
+        {/if}
         <h2>
             {viewManager.name}
             <div class="teamSub">{coOwners ? 'Co-' : ''}Manager of <i>{getTeamNameFromTeamManagers(leagueTeamManagers, rosterID, year)}</i></div>
@@ -252,7 +256,7 @@
             <!-- <span class="infoChild">{viewManager.preferredContact}</span> -->
             {#if viewManager.favoriteTeam == 'self'}
                 <span class="seperator">|</span>
-                <img class="infoChild infoTeam" src={viewManager.avatarLink} alt="favorite team"/>
+                <img class="infoChild infoTeam" src="{viewManager.avatarLink}" alt="favorite team"/>
             {:else if viewManager.favoriteTeam}
                 <!-- favoriteTeam is an optional field -->
                 <span class="seperator">|</span>

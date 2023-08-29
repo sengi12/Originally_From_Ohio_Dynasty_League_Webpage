@@ -246,7 +246,7 @@
         <div class="infoSlot infoTeam">
             {#if manager.favoriteTeam == 'self'}
                 <div class="infoIcon">
-                    <img class="infoImg" src={manager.avatarLink} alt="favorite team"/>
+                    <img class="infoImg" src="{manager.avatarLink}" alt="favorite team"/>
                 </div>
             {:else if manager.favoriteTeam}
                 <div class="infoIcon">

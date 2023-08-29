@@ -79,7 +79,7 @@ export const managers = [
       <p>Best team moves this far include drafting JuJu Smith-Schuster at the 1.11 in the startup draft and trading jalen hurts for a third round pick (S/O Kyle Pottorf for the assist)</p>
       <p>Salty AsF for not winning last year, saltier that I lost to the dude whose second round pick I traded for earlier in the year assuming it’d be a top 3 second round pick.</p>
       `,
-      "photo": "/managers/question.jpg", // square ratio recommended (no larger than 500x500)
+      "photo": "self", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2015, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "self", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "avatarLink": "https://sleepercdn.com/uploads/fc9a030b91e0381a2059a5566e7dede9.jpg", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
