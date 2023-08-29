@@ -1,6 +1,6 @@
 <script>
     import { goto } from "$app/navigation";
-	import { getAvatar, getDatesActive, getRosterIDFromManagerID, getTeamNameFromTeamManagers } from "$lib/utils/helperFunctions/universalFunctions";
+	import { getAvatar, getAvatarFromTeamManagers, getDatesActive, getRosterIDFromManagerID, getTeamNameFromTeamManagers } from "$lib/utils/helperFunctions/universalFunctions";
     import {dynasty} from "$lib/utils/leagueInfo"
 
     export let manager, leagueTeamManagers, key;
@@ -246,7 +246,7 @@
         <div class="infoSlot infoTeam">
             {#if manager.favoriteTeam == 'self'}
                 <div class="infoIcon">
-                    <img class="infoImg" src={manager.getAvatar} alt="favorite team"/>
+                    <img class="infoImg" src={getAvatarFromTeamManagers(leagueTeamManagers, manager.rosterID, leagueTeamManagers.currentYear)} alt="favorite team"/>
                 </div>
             {:else if manager.favoriteTeam}
                 <div class="infoIcon">
