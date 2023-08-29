@@ -251,9 +251,8 @@
             {/if}
             <!-- <span class="infoChild">{viewManager.preferredContact}</span> -->
             {#if viewManager.favoriteTeam == 'self'}
-                <div class="infoIcon">
-                    <img class="infoImg" src={viewManager.avatarLink} alt="favorite team"/>
-                </div>
+                <span class="seperator">|</span>
+                <img class="infoChild infoTeam" src={viewManager.avatarLink} alt="favorite team"/>
             {:else if viewManager.favoriteTeam}
                 <!-- favoriteTeam is an optional field -->
                 <span class="seperator">|</span>
