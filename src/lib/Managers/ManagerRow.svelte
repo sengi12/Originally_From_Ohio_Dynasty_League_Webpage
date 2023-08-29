@@ -244,13 +244,13 @@
     <div class="info">
         <!-- Favorite team (optional) -->
         <div class="infoSlot infoTeam">
-            {#if manager.favoriteTeam}
-                <div class="infoIcon">
-                    <img class="infoImg" src="https://sleepercdn.com/images/team_logos/nfl/{manager.favoriteTeam}.png" alt="favorite team"/>
-                </div>
-            {:else if manager.favoriteTeam == 'self'}
+            {#if manager.favoriteTeam == 'self'}
                 <div class="infoIcon">
                     <img class="infoImg" src={manager.getAvatar} alt="favorite team"/>
+                </div>
+            {:else if manager.favoriteTeam}
+                <div class="infoIcon">
+                    <img class="infoImg" src="https://sleepercdn.com/images/team_logos/nfl/{manager.favoriteTeam}.png" alt="favorite team"/>
                 </div>
             {:else}
                 <div class="infoIcon question">
