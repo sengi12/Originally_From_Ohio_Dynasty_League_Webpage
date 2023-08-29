@@ -250,7 +250,11 @@
                 <span class="infoChild">{viewManager.preferredContact}<img class="infoChild infoContact" src="/{viewManager.preferredContact}.png" alt="favorite team"/></span>
             {/if}
             <!-- <span class="infoChild">{viewManager.preferredContact}</span> -->
-            {#if viewManager.favoriteTeam}
+            {#if viewManager.favoriteTeam == 'self'}
+                <div class="infoIcon">
+                    <img class="infoImg" src={viewManager.avatarLink} alt="favorite team"/>
+                </div>
+            {:else if viewManager.favoriteTeam}
                 <!-- favoriteTeam is an optional field -->
                 <span class="seperator">|</span>
                 <img class="infoChild infoTeam" src="https://sleepercdn.com/images/team_logos/nfl/{viewManager.favoriteTeam}.png" alt="favorite team"/>
