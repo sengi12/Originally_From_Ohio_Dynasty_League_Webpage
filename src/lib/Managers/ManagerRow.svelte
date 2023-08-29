@@ -1,6 +1,6 @@
 <script>
     import { goto } from "$app/navigation";
-	import { getDatesActive, getRosterIDFromManagerID, getTeamNameFromTeamManagers } from "$lib/utils/helperFunctions/universalFunctions";
+	import { getAvatar, getDatesActive, getRosterIDFromManagerID, getTeamNameFromTeamManagers } from "$lib/utils/helperFunctions/universalFunctions";
     import {dynasty} from "$lib/utils/leagueInfo"
 
     export let manager, leagueTeamManagers, key;
@@ -248,6 +248,11 @@
                 <div class="infoIcon">
                     <img class="infoImg" src="https://sleepercdn.com/images/team_logos/nfl/{manager.favoriteTeam}.png" alt="favorite team"/>
                 </div>
+            {:else if manger.favoriteTeam == 'self'}
+                <div class="infoIcon">
+                    <img class="infoImg" src={manager.getAvatar} alt="favorite team"/>
+                </div>
+            {/if}
             {:else}
                 <div class="infoIcon question">
                     <img class="infoImg" src="/managers/question.jpg" alt="favorite team"/>
