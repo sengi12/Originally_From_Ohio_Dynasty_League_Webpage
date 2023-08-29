@@ -24,7 +24,54 @@ https://github.com/nmelhado/league-page/blob/master/TRAINING_WHEELS.md#ii-adding
 // To omit an optional field, set it's value to null
 
 export const managers = [
-    // {
+    {
+      "managerID": "318054040384589824",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+      "name": "Michael Sengelmann",
+      "location": "Columbus", // (optional)
+      "bio": `<p>Ever since the league's founding in 2019 there has not been a team that has been more downtrodden or carried more misfortune in it's history than this. From lob-sided trades like the infamous "Kelce-Godwin trade" to misguided draft selections like Jalen Raegor, this team's history has it all.</p>
+        <p>However, a stroke of fortune shed it's light when this franchise decided to trade a haul of future draft choices for the #1 draft selection in the 2021 draft. Being a Bengals fan, the selection of Ja'Marr Chase was an easy one, but he did not have the faintest clue for what Chase would eventually become.</p>
+        <p>Seen by many now as the #1 overall dynasty asset alongside fellow LSU Tiger, Justin Jefferson, this stroke of good luck seemed to be the beginning of a new era. In the following two drafts, The Ja'Mazing Chase would go on to select three wide receivers that would shape out a promising young core that is amongst the best in the league with Chris Olave, George Pickens and now rookie Jaxon Smith-Njigba.</p>
+        <p>To compliment this young core, The Ja'Mazing Chase has made a trio of massive moves to acquire the necessary Running Back stable to compete with the best of the best. These moves overall resulted trading three first round draft selections in 2023, 2024 and 2025 for Running Backs Najee Harris, Nick Chubb and Austin Ekeler with one of those trades being the leagues very first four-team trade...</p>
+        <p>While these moves have firmly placed this team in a win-now mode, the hardest part of the journey has yet to come as this season unlike any other has seen an arms-race, akin to the AFC, where the top of the top teams have been accumulating talent left and right.</p>
+      `,
+      "photo": "/managers/mike.jpg", // square ratio recommended (no larger than 500x500)
+      "fantasyStart": 2015, // (optional) when did the manager start playing fantasy football
+      "favoriteTeam": "cin", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
+      "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
+      "rival": {
+        name: "Lucas Pottorf, AJ Cardarelli, Will Ortquist", // Can be anything (usually your rival's name)
+        link: 0, // manager array number within this array, or null to link back to all managers page
+        image: "/managers/rival.jpg", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      },
+      "favoritePlayer": 7564, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
+      "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
+      "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
+      "philosophy": "Similar to that of last year's champion in Kyle Clark, the goal of this franchise is to go from the depths to the pinnacle.", // (optional)
+      "tradingScale": 3, // 1 - 10 (optional)
+      "preferredContact": "Signal",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+    },
+    {
+      "managerID": "330022379155644416",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+      "name": "Thomas Eidens",
+      "location": "Columbus", // (optional)
+      "bio": `<p>My team's identity has kind of been all over the place since this league kicked off. I've added some key pieces (Tee Higgins, Cooper Kupp, Joe Mixon, Tony Pollard, Jonathan Taylor) through trades to what was a solid foundation (Ceedee Lamb, Garrett Wilson, Devonta Smith, Bijan Robinson, Trevor Lawrence, Anthony Richardson). I have moved off all my picks in the next two drafts, but hoping the youth of my team and depth I've added makes the transition easier next time I choose to rebuild.</p>`,
+      "photo": "/managers/tom.jpg", // square ratio recommended (no larger than 500x500)
+      "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
+      "favoriteTeam": "cle", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
+      "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
+      "rival": {
+        name: "Tim Eidens", // Can be anything (usually your rival's name)
+        link: 0, // manager array number within this array, or null to link back to all managers page
+        image: "/managers/tim.jpg", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      },
+      "favoritePlayer": 6786, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
+      "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
+      "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
+      "philosophy": "Stay relatively young all while competing for a championship.", // (optional)
+      "tradingScale": 10, // 1 - 10 (optional)
+      "preferredContact": "iMessage",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+    },
+        // {
     //   "managerID": "200649265628848128",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
     //   "name": "Zach Kirkland",
     //   "location": "Gahanna", // (optional)
@@ -87,53 +134,6 @@ export const managers = [
     //   "tradingScale": 10, // 1 - 10 (optional)
     //   "preferredContact": "Text",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     // },
-    {
-      "managerID": "318054040384589824",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
-      "name": "Michael Sengelmann",
-      "location": "Columbus", // (optional)
-      "bio": `<p>Ever since the league's founding in 2019 there has not been a team that has been more downtrodden or carried more misfortune in it's history than this. From lob-sided trades like the infamous "Kelce-Godwin trade" to misguided draft selections like Jalen Raegor, this team's history has it all.</p>
-        <p>However, a stroke of fortune shed it's light when this franchise decided to trade a haul of future draft choices for the #1 draft selection in the 2021 draft. Being a Bengals fan, the selection of Ja'Marr Chase was an easy one, but he did not have the faintest clue for what Chase would eventually become.</p>
-        <p>Seen by many now as the #1 overall dynasty asset alongside fellow LSU Tiger, Justin Jefferson, this stroke of good luck seemed to be the beginning of a new era. In the following two drafts, The Ja'Mazing Chase would go on to select three wide receivers that would shape out a promising young core that is amongst the best in the league with Chris Olave, George Pickens and now rookie Jaxon Smith-Njigba.</p>
-        <p>To compliment this young core, The Ja'Mazing Chase has made a trio of massive moves to acquire the necessary Running Back stable to compete with the best of the best. These moves overall resulted trading three first round draft selections in 2023, 2024 and 2025 for Running Backs Najee Harris, Nick Chubb and Austin Ekeler with one of those trades being the leagues very first four-team trade...</p>
-        <p>While these moves have firmly placed this team in a win-now mode, the hardest part of the journey has yet to come as this season unlike any other has seen an arms-race, akin to the AFC, where the top of the top teams have been accumulating talent left and right.</p>
-      `,
-      "photo": "/managers/mike.jpg", // square ratio recommended (no larger than 500x500)
-      "fantasyStart": 2015, // (optional) when did the manager start playing fantasy football
-      "favoriteTeam": "cin", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
-      "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
-      "rival": {
-        name: "Lucas Pottorf, AJ Cardarelli, Will Ortquist", // Can be anything (usually your rival's name)
-        link: 0, // manager array number within this array, or null to link back to all managers page
-        image: "/managers/rival.jpg", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
-      },
-      "favoritePlayer": 7564, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
-      "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
-      "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-      "philosophy": "Similar to that of last year's champion in Kyle Clark, the goal of this franchise is to go from the depths to the pinnacle.", // (optional)
-      "tradingScale": 3, // 1 - 10 (optional)
-      "preferredContact": "Signal",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
-    },
-    {
-      "managerID": "330022379155644416",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
-      "name": "Thomas Eidens",
-      "location": "Columbus", // (optional)
-      "bio": `<p>My team's identity has kind of been all over the place since this league kicked off. I've added some key pieces (Tee Higgins, Cooper Kupp, Joe Mixon, Tony Pollard, Jonathan Taylor) through trades to what was a solid foundation (Ceedee Lamb, Garrett Wilson, Devonta Smith, Bijan Robinson, Trevor Lawrence, Anthony Richardson). I have moved off all my picks in the next two drafts, but hoping the youth of my team and depth I've added makes the transition easier next time I choose to rebuild.</p>`,
-      "photo": "/managers/tom.jpg", // square ratio recommended (no larger than 500x500)
-      "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
-      "favoriteTeam": "cle", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
-      "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
-      "rival": {
-        name: "Tim Eidens", // Can be anything (usually your rival's name)
-        link: 0, // manager array number within this array, or null to link back to all managers page
-        image: "/managers/tim.jpg", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
-      },
-      "favoritePlayer": 6786, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
-      "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
-      "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-      "philosophy": "Stay relatively young all while competing for a championship.", // (optional)
-      "tradingScale": 10, // 1 - 10 (optional)
-      "preferredContact": "iMessage",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
-    }
     // {
     //   "managerID": "322780169012011008",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
     //   "name": "Tim Eidens",
