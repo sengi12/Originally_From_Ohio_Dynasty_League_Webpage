@@ -231,7 +231,11 @@
 
 <div class="manager" style="{retired ? "background-image: url(/retired.png); background-color: var(--ddd)": ""}" on:click={() => goto(`/manager?manager=${key}`)}>
     <div class="avatarHolder">
-        <img class="photo" src="{manager.photo}" alt="{manager.name}" />
+        {#if manager.photo == 'self'}
+            <img class="photo" src="{manager.avatarLink}" alt="{manager.name}" />
+        {:else}
+            <img class="photo" src="{manager.photo}" alt="{manager.name}" />
+        {/if}
         {#if commissioner}
             <div class="commissionerBadge">
                 <span>C</span>
