@@ -153,6 +153,7 @@ export const managers = [
       "photo": "self", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "cle", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
+      "avatarLink": "https://sleepercdn.com/uploads/3463c8e6009138203589631d1c9eeb28.jpg", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
       "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
         name: "Tim Eidens", // Can be anything (usually your rival's name)
