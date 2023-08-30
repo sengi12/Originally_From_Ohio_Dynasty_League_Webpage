@@ -95,7 +95,7 @@ export const managers = [
       },
       "favoritePlayer": 6794, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
       "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
-      "rookieOrVets": "Veterans", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
+      "rookieOrVets": "Vets", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
       "philosophy": "AT LEAST 1 championship within the next three years, book it ✅", // (optional)
       // TODO: automate this based off of total trades...
       "tradingScale": 4, // 1 - 10 (optional)
@@ -197,7 +197,7 @@ export const managers = [
       },
       "favoritePlayer": 7526, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
       "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
-      "rookieOrVets": "Veterans", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
+      "rookieOrVets": "Vets", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
       "philosophy": "Don't get stuck with the unwanted baggage", // (optional)
       // TODO: automate this based off of total trades...
       "tradingScale": 6, // 1 - 10 (optional)
@@ -221,11 +221,35 @@ export const managers = [
       },
       "favoritePlayer": 4663, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
       "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
-      "rookieOrVets": "Veterans", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-      "philosophy": "Win and Quit", // (optional)
+      "rookieOrVets": "Vets", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
+      "philosophy": "Win and Quit once my team ages out", // (optional)
       // TODO: automate this based off of total trades...
       "tradingScale": 0, // 1 - 10 (optional)
       "preferredContact": "iMessage",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+    },
+    {
+      "managerID": "459901710429581312",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+      "name": "Alec Carovillano",
+      "location": "Cincinnati", // (optional)
+      "bio": `<p>Here lies the remnants of the relegated non-existent trade partner...</p>
+      `,
+      "photo": "self", // square ratio recommended (no larger than 500x500)
+      // "fantasyStart": 2010, // (optional) when did the manager start playing fantasy football
+      "avatarLink": "https://sleepercdn.com/avatars/thumbs/5dadf4f70e824e3506646f13fc2105d4", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
+      // "favoriteTeam": "pit", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
+      "mode": "Retired", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
+      "rival": {
+        name: "N/A", // Can be anything (usually your rival's name)
+        link: 1, // manager array number within this array, or null to link back to all managers page
+        image: "/managers/everyone.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      },
+      "favoritePlayer": 4881, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
+      "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
+      "rookieOrVets": "Vets", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
+      "philosophy": "Wait I was in a dynasty league?", // (optional)
+      // TODO: automate this based off of total trades...
+      "tradingScale": 0, // 1 - 10 (optional)
+      "preferredContact": "Carrier Pigeon",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     // {
     //   "managerID": "316633830263902208",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
