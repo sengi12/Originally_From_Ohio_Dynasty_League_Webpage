@@ -228,7 +228,7 @@ export const managers = [
       "preferredContact": "iMessage",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "managerID": "459901710429581312",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+      "managerID": "322783015971332096",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
       "name": "Alec Carovillano",
       "location": "Cincinnati", // (optional)
       "bio": `<p>Here lies the remnants of the relegated non-existent trade partner...</p>
