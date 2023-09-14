@@ -231,6 +231,32 @@ export const managers = [
       "preferredContact": "Signal",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
+      "managerID": "459771841238528000",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
+      "name": "Sam Shovlin",
+      "location": "Louisville, KY (by way of Columbus, OH)", // (optional)
+      "bio": `<p>This was my first dynasty league, and without knowing better, I drafted as if it was a redraft league with zero regard for the future. It paid dividends right away as the first year I had a legitimate contender, but fell short in the finals finishing in second place (despite drafting Andrew Luck in the 4th round of the startup and him retiring two weeks later). I squeaked into the playoffs the second year of the league following the second place finish, but had a decisive first round loss.</p>
+      <p>Instead of realizing I was trending down and working towards a rebuild, the second place finish and then a playoff appearance gave me the confidence to further push my chips all in, and I traded away future draft picks for aging veterans who I believed were able to help me stay in win now mode. This is where the problems started. I more or less traded 3 first round picks for Mike Davis, Julio Jones and DeAndre Hopkins. These bad trades coupled with an aging roster led me to where I am today. I finished 4th to last in the third year of the league and in last place last year, but didn't have my own first rounder either year (which yielded Garrett Wilson and Bijan Robinson). I am now projected to finish in the bottom 3 next year, but I do not have my first round pick next year either.</p>
+      <p>After missing out on what should have been premier rookie picks whilst having an aging roster, I realized my attention should be turned to a rebuild. With still a lack of premier draft picks in 2024, halfway through last season and into the offseason, I changed my focus to the future and fleshing out my roster. With a new found eye to the future, I shipped off veterans Jalen Hurts, Derrick Henry, DeAndre Hopkins, James Conner and Najee Harris into roster depth, draft picks, and young pieces - including Christian Watson, Dotson, QJ, Kamara, Eli Mitchell, Kendre Miller, Rashee Rice, Alec Pierce, LaPorta, Tillman and more. Now I have plenty of young talent, and I am crossing my fingers that at least a handful of them break out as top tier fantasy assets in order for my team to compete by the 2025 season.</p>
+      `,
+      "photo": "/managers/sam.jpg", // square ratio recommended (no larger than 500x500)
+      "fantasyStart": 2008, // (optional) when did the manager start playing fantasy football
+      "avatarLink": "link to image", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
+      "favoriteTeam": "pit", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
+      "mode": "Rebuild", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
+      "rival": {
+        name: "Blaine", // Can be anything (usually your rival's name)
+        link: 0, // manager array number within this array, or null to link back to all managers page
+        image: "/managers/everyone.jpg", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      },
+      "favoritePlayer": 4881, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
+      "valuePosition": "RB", // (optional) Favorite position (QB, WR, RB, TE, etc.)
+      "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
+      "philosophy": "2025 Here We Come: Life is too short to be rebuilding a dynasty team forever", // (optional)
+      // TODO: automate this based off of total trades...
+      "tradingScale": 7, // 1 - 10 (optional)
+      "preferredContact": "Text",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+    },
+    {
       "managerID": "459901710429581312",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
       "name": "Ethan Fernandez",
       "location": "Columbus", // (optional)
@@ -277,32 +303,6 @@ export const managers = [
       // TODO: automate this based off of total trades...
       "tradingScale": 0, // 1 - 10 (optional)
       "preferredContact": "Carrier Pigeon",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
-    },
-    {
-      "managerID": "459771841238528000",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
-      "name": "Sam Shovlin",
-      "location": "Louisville, KY (by way of Columbus, OH)", // (optional)
-      "bio": `<p>This was my first dynasty league, and without knowing better, I drafted as if it was a redraft league with zero regard for the future. It paid dividends right away as the first year I had a legitimate contender, but fell short in the finals finishing in second place (despite drafting Andrew Luck in the 4th round of the startup and him retiring two weeks later). I squeaked into the playoffs the second year of the league following the second place finish, but had a decisive first round loss.</p>
-      <p>Instead of realizing I was trending down and working towards a rebuild, the second place finish and then a playoff appearance gave me the confidence to further push my chips all in, and I traded away future draft picks for aging veterans who I believed were able to help me stay in win now mode. This is where the problems started. I more or less traded 3 first round picks for Mike Davis, Julio Jones and DeAndre Hopkins. These bad trades coupled with an aging roster led me to where I am today. I finished 4th to last in the third year of the league and in last place last year, but didn't have my own first rounder either year (which yielded Garrett Wilson and Bijan Robinson). I am now projected to finish in the bottom 3 next year, but I do not have my first round pick next year either.</p>
-      <p>After missing out on what should have been premier rookie picks whilst having an aging roster, I realized my attention should be turned to a rebuild. With still a lack of premier draft picks in 2024, halfway through last season and into the offseason, I changed my focus to the future and fleshing out my roster. With a new found eye to the future, I shipped off veterans Jalen Hurts, Derrick Henry, DeAndre Hopkins, James Conner and Najee Harris into roster depth, draft picks, and young pieces - including Christian Watson, Dotson, QJ, Kamara, Eli Mitchell, Kendre Miller, Rashee Rice, Alec Pierce, LaPorta, Tillman and more. Now I have plenty of young talent, and I am crossing my fingers that at least a handful of them break out as top tier fantasy assets in order for my team to compete by the 2025 season.</p>
-      `,
-      "photo": "/managers/sam.jpg", // square ratio recommended (no larger than 500x500)
-      "fantasyStart": 2008, // (optional) when did the manager start playing fantasy football
-      "avatarLink": "link to image", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
-      "favoriteTeam": "pit", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
-      "mode": "Rebuild", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
-      "rival": {
-        name: "Blaine", // Can be anything (usually your rival's name)
-        link: 0, // manager array number within this array, or null to link back to all managers page
-        image: "/managers/everyone.jpg", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
-      },
-      "favoritePlayer": 4881, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
-      "valuePosition": "RB", // (optional) Favorite position (QB, WR, RB, TE, etc.)
-      "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-      "philosophy": "2025 Here We Come: Life is too short to be rebuilding a dynasty team forever", // (optional)
-      // TODO: automate this based off of total trades...
-      "tradingScale": 7, // 1 - 10 (optional)
-      "preferredContact": "Text",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     // {
     //   "managerID": "316633830263902208",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
