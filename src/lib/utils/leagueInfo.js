@@ -267,7 +267,7 @@ export const managers = [
       `,
       "photo": "self", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
-      "avatarLink": "link to image", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
+      "avatarLink": "https://sleepercdn.com/uploads/b2dfd06d8a943bb2f871849414985a73.jpg", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
       "favoriteTeam": "cle", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "mode": "Dynasty", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
@@ -292,7 +292,7 @@ export const managers = [
       <p>Since this team won the championship in 2019, though it consistently made the playoffs it also consistently fell short of a second title leading to the ultimate decision to tear down and start over.</p>
       <p>After most recently trading away Jalen Hurts, this roster as it stands right now is easily one of the worst fantasy football rosters ever assembled and will be consistently battling for the All-Time Single Week Scoring Low week in and week out until further notice...</p>
       `,
-      "photo": "self", // square ratio recommended (no larger than 500x500)
+      "photo": "https://sleepercdn.com/uploads/3ec5f6c8869b08667e948f9c984c1ad0.jpg", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
       "avatarLink": "link to image", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
       "favoriteTeam": "cle", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
@@ -320,7 +320,7 @@ export const managers = [
       `,
       "photo": "self", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
-      "avatarLink": "link to image", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
+      "avatarLink": "https://sleepercdn.com/uploads/dedbb028a0fd1cc1182562222f4d5e59.jpg", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
       "favoriteTeam": "pit", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "mode": "Rebuild", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
