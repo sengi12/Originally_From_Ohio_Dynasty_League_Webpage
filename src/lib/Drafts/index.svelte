@@ -21,6 +21,12 @@
     h6 {
         text-align: center;
     }
+
+    .error {
+        text-align: center;
+        color: #d32f2f;
+        padding: 20px;
+    }
 </style>
 
 
@@ -30,12 +36,20 @@
 		<br />
 		<LinearProgress indeterminate />
 	</div>
-{:then [upcomingDraft, leagueTeamManagers, {players}] }
-    <h4>Upcoming {upcomingDraft.year} Draft</h4>
-    <Draft draftData={upcomingDraft} {leagueTeamManagers} year={upcomingDraft.year} {players} />
+{:then [upcomingDraft, leagueTeamManagers, playerData] }
+    {#if upcomingDraft}
+        <h4>Upcoming {upcomingDraft.year} Draft</h4>
+        <Draft draftData={upcomingDraft} {leagueTeamManagers} year={upcomingDraft.year} players={playerData?.players || {}} />
+    {:else}
+        <div class="error">
+            <p>Unable to load upcoming draft. Please try again later.</p>
+        </div>
+    {/if}
 {:catch error}
 	<!-- promise was rejected -->
-	<p>Something went wrong: {error.message}</p>
+	<div class="error">
+        <p>Something went wrong: {error.message}</p>
+    </div>
 {/await}
 
 
@@ -47,17 +61,19 @@
 		<br />
 		<LinearProgress indeterminate />
 	</div>
-{:then [previousDrafts, leagueTeamManagers, {players}] }
+{:then [previousDrafts, leagueTeamManagers, playerData] }
 	<!-- Don't display anything unless there are previous drafts -->
-	{#if previousDrafts.length}
+	{#if previousDrafts && previousDrafts.length}
 		<hr />
 		<h4>Previous Drafts</h4>
 		{#each previousDrafts as previousDraft}
 			<h6>{previousDraft.year} Draft</h6>
-			<Draft draftData={previousDraft} previous={true} {leagueTeamManagers} year={previousDraft.year} {players} />
+			<Draft draftData={previousDraft} previous={true} {leagueTeamManagers} year={previousDraft.year} players={playerData?.players || {}} />
 		{/each}
 	{/if}
 {:catch error}
 	<!-- promise was rejected -->
-	<p>Something went wrong: {error.message}</p>
+	<div class="error">
+        <p>Something went wrong loading previous drafts: {error.message}</p>
+    </div>
 {/await}
