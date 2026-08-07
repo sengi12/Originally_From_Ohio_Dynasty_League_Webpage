@@ -1,5 +1,5 @@
 /*   STEP 1   */
-export const leagueID = "1050629132641607680"; // your league ID
+export const leagueID = "1180564550988939264"; // your league ID
 export const leagueName = "Originally From Ohio Dynasty League"; // your league name
 export const dues = 50; // (optional) used in template constitution page
 export const dynasty = true; // true for dynasty leagues, false for redraft and keeper
@@ -10,8 +10,8 @@ export const homepageText = `
   <p>Founded in 2019, the Originally From Ohio Dynasty League began as a means for many to embark on their first journey into the chasms of building their very own dynasty football franchise. Each year, managers compete to have their names etched in immortal stone as Champions, aiming to avoid the ever-humiliating Toilet Bowl.</p>
   <p>Some managers built immediate win-now teams, while others began the slow process of building their dream juggernaut dynasty team. Over the years it has become clear that a portion of the league prioritizes youth and draft picks, while the rest gravitate towards the steadfast value of veterans. While some managers have fled from injuries and tumultuous contract negotiations, others bought the dip and built for their future.</p>
   <p>After years of domination, struggle and humiliation some have been fired to more simpler re-draft leagues, where others have decided to retire whilst at the pinnacle. Nonetheless the league has only gotten stronger. With more passionate managers, the competition has become more intense and more difficult than ever before.</p>
-  <p>Recently there have been massive moves that have shaken the very foundation of the league. With the two time league champ retired, and league activity at an all-time high there is room for a new dynasty to begin.</p>
-  <p>Coming off of a season where the sixth seeded Kyle Clark went into his first playoff appearance only to go on and win his first Championship, there have been a plethora of massive trades, moves and acquisitions that leave this upcoming season to chance...</p>
+  <p>Since the retiring of the two-time league champ, we have seen a plethora of incredible storylines yet we have yet to see anyone repeat. In 2023-2024 we had back-to-back years where sixth seeded underdogs (@kclark75 and @RichBigMeechy) would go on to have highly unprobable playoff runs that included beating the other in a narrow victory. And coming into 2025, we are coming off a year which one team truly stood head and shoulders above the rest. Led by the likes of Saquon Barkley and Derrick Henry, @timeidens had one of the more dominant seasons ever, having the 2nd best regular season of all-time enroute to the 1-seed and then absolutely obliterating the competition with the #1 and #2 highest scoring playoff performances of all-time...</p>
+  <p>The year is 2025 and the offseason has been anything but still where several teams have seen quite the makeover with the draft, free agency and trades along with the new shift towards 6 points per passing touchdown. It may seem clear who is at the top and who is at the bottom now, but the season is only just beginning...</p>
 `;
 
 /*   STEP 3   */
@@ -28,11 +28,10 @@ export const managers = [
       "managerID": "318054040384589824",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
       "name": "Michael Sengelmann",
       "location": "Columbus", // (optional)
-      "bio": `<p>Ever since the league's founding in 2019 there has not been a team that has been more downtrodden or carried more misfortune in it's history than this. From lob-sided trades like the infamous "Kelce-Godwin trade" to misguided draft selections like Jalen Raegor, this team's history has it all.</p>
+      "bio": `<p>Ever since the league's founding in 2019 there has not been a team that has been more downtrodden or carried more misfortune in it's history than this. From lob-sided trades like the infamous "Kelce-Godwin trade" to misguided draft selections like Henry Ruggs III, this team's history has it all.</p>
         <p>However, a stroke of fortune shed it's light when this franchise decided to trade a haul of future draft choices for the #1 draft selection in the 2021 draft. Being a Bengals fan, the selection of Ja'Marr Chase was an easy one, but he did not have the faintest clue for what Chase would eventually become.</p>
-        <p>Seen by many now as the #1 overall dynasty asset alongside fellow LSU Tiger, Justin Jefferson, this stroke of good luck seemed to be the beginning of a new era. In the following two drafts, The Ja'Mazing Chase would go on to select three wide receivers that would shape out a promising young core that is amongst the best in the league with Chris Olave, George Pickens and now rookie Jaxon Smith-Njigba.</p>
-        <p>To compliment this young core, The Ja'Mazing Chase has made a trio of massive moves to acquire the necessary Running Back stable to compete with the best of the best. These moves overall resulted trading three first round draft selections in 2023, 2024 and 2025 for Running Backs Najee Harris, Nick Chubb and Austin Ekeler with one of those trades being the leagues very first four-team trade...</p>
-        <p>While these moves have firmly placed this team in a win-now mode, the hardest part of the journey has yet to come as this season unlike any other has seen an arms-race, akin to the AFC, where the top of the top teams have been accumulating talent left and right.</p>
+        <p>Seen by many now as the #1 overall dynasty asset alongside fellow LSU Tiger, Justin Jefferson, this stroke of good luck seemed to be the beginning of a new era. After a couple seasons of hitting on young receivers along with some major wins in trades, he's built one of the better WR-cores in the league to coincide with a strong cast around them.</p>
+        <p>Last year was the best season in team history by-far as he achieved the 8th best season recorded in league history, averaging 121.88 PPG, winning their first playoff game and scoring the 4th highest scoring playoff performance of all-time (150.48). However fortunate last season was, it just so happened that they played the team that scored the 3rd highest scoring playoff performance of all-time the very same week... Led by the super-stack of Ja'Marr Chase, Chase Brown and Joe Burrow this team is looking to reload and make another run towards a championship in 2025...</p>
       `,
       "photo": "/managers/mike.jpg", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2015, // (optional) when did the manager start playing fantasy football
@@ -47,9 +46,9 @@ export const managers = [
       "favoritePlayer": 7564, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
       "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
       "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-      "philosophy": "Similar to that of last year's champion in Kyle Clark, the goal of this franchise is to go from the depths to the pinnacle.", // (optional)
+      "philosophy": "The goal of this franchise is simple... to go from the depths to the pinnacle with my favorite players in the league in tandem.", // (optional)
     // TODO: automate this based off of total trades...
-      "tradingScale": 3, // 1 - 10 (optional)
+      "tradingScale": 6, // 1 - 10 (optional)
       "preferredContact": "Signal",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
@@ -87,7 +86,7 @@ export const managers = [
       "fantasyStart": 2015, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "self", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "avatarLink": "https://sleepercdn.com/uploads/fc9a030b91e0381a2059a5566e7dede9.jpg", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
-      "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
+      "mode": "Rebuild", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
         name: "Used to be Ethan, Now it's Kyle", // Can be anything (usually your rival's name)
         link: 0, // manager array number within this array, or null to link back to all managers page
@@ -98,7 +97,7 @@ export const managers = [
       "rookieOrVets": "Vets", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
       "philosophy": "AT LEAST 1 championship within the next three years, book it ✅", // (optional)
       // TODO: automate this based off of total trades...
-      "tradingScale": 4, // 1 - 10 (optional)
+      "tradingScale": 5, // 1 - 10 (optional)
       "preferredContact": "iMessage",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
@@ -114,7 +113,7 @@ export const managers = [
       "fantasyStart": 2016, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "cle", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "avatarLink": "link to image", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
-      "mode": "Rebuild", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
+      "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
         name: "Adam Sophocleous", // Can be anything (usually your rival's name)
         link: 0, // manager array number within this array, or null to link back to all managers page
@@ -125,7 +124,7 @@ export const managers = [
       "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
       "philosophy": "Capitalize on market value of players today to improve my fantasy team tomorrow", // (optional)
       // TODO: automate this based off of total trades...
-      "tradingScale": 4, // 1 - 10 (optional)
+      "tradingScale": 5, // 1 - 10 (optional)
       "preferredContact": "iMessage",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
@@ -148,7 +147,7 @@ export const managers = [
       "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
       "philosophy": "We love rookies. We keep getting older and they stay the same age. Yes they do.", // (optional)
       // TODO: automate this based off of total trades...
-      "tradingScale": 0, // 1 - 10 (optional)
+      "tradingScale": 4, // 1 - 10 (optional)
       "preferredContact": "Signal",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
@@ -163,7 +162,7 @@ export const managers = [
       "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "cle", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "avatarLink": "https://sleepercdn.com/uploads/3463c8e6009138203589631d1c9eeb28.jpg", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
-      "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
+      "mode": "Rebuild", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
         name: "Tim, Nick and Father William", // Can be anything (usually your rival's name)
         link: 0, // manager array number within this array, or null to link back to all managers page
@@ -173,8 +172,8 @@ export const managers = [
       "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
       "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
       "philosophy": "Do or do not. There is no try.", // (optional)
-      "tradingScale": 3, // 1 - 10 (optional)
-      "preferredContact": "Text",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
+      "tradingScale": 5, // 1 - 10 (optional)
+      "preferredContact": "Signal",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
       "managerID": "322780169012011008",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
@@ -189,7 +188,7 @@ export const managers = [
       "fantasyStart": 2010, // (optional) when did the manager start playing fantasy football
       "avatarLink": "link to image", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
       "favoriteTeam": "pit", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
-      "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
+      "mode": "Dynasty", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
         name: "Thomas Eidens", // Can be anything (usually your rival's name)
         link: 1, // manager array number within this array, or null to link back to all managers page
@@ -200,7 +199,7 @@ export const managers = [
       "rookieOrVets": "Vets", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
       "philosophy": "Don't get stuck with the unwanted baggage", // (optional)
       // TODO: automate this based off of total trades...
-      "tradingScale": 6, // 1 - 10 (optional)
+      "tradingScale": 7, // 1 - 10 (optional)
       "preferredContact": "iMessage",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
@@ -242,7 +241,7 @@ export const managers = [
       "fantasyStart": 2008, // (optional) when did the manager start playing fantasy football
       "avatarLink": "link to image", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
       "favoriteTeam": "pit", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
-      "mode": "Rebuild", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
+      "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
         name: "Blaine", // Can be anything (usually your rival's name)
         link: 0, // manager array number within this array, or null to link back to all managers page
@@ -253,7 +252,7 @@ export const managers = [
       "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
       "philosophy": "2025 Here We Come: Life is too short to be rebuilding a dynasty team forever", // (optional)
       // TODO: automate this based off of total trades...
-      "tradingScale": 7, // 1 - 10 (optional)
+      "tradingScale": 9, // 1 - 10 (optional)
       "preferredContact": "Text",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
@@ -269,7 +268,7 @@ export const managers = [
       "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
       "avatarLink": "https://sleepercdn.com/uploads/b2dfd06d8a943bb2f871849414985a73.jpg", // (optional) go to go to https://api.sleeper.app/v1/league/<your_league_id>/users under metadat.avatar
       "favoriteTeam": "cle", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
-      "mode": "Dynasty", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
+      "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
         name: "???", // Can be anything (usually your rival's name)
         link: 0, // manager array number within this array, or null to link back to all managers page
@@ -333,7 +332,7 @@ export const managers = [
       "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
       "philosophy": "Can't wait for the 2024 draft!!!", // (optional)
       // TODO: automate this based off of total trades...
-      "tradingScale": 10, // 1 - 10 (optional)
+      "tradingScale": 7, // 1 - 10 (optional)
       "preferredContact": "Text",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
