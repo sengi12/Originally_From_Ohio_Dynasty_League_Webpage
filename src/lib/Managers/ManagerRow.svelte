@@ -229,7 +229,7 @@
     }
 </style>
 
-<div class="manager" style="{retired ? "background-image: url(/retired.png); background-color: var(--ddd)": ""}" on:click={() => goto(`/manager?manager=${key}`)}>
+<div class="manager" style="{retired ? "background-image: url(/retired.png); background-color: var(--ddd)": ""}" onclick={() => goto(`/manager?manager=${key}`)}>
     <div class="avatarHolder">
         {#if manager.photo == 'self'}
             <img class="photo" src="{manager.avatarLink}" alt="{manager.name}" />
