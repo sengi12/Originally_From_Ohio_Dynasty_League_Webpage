@@ -5,6 +5,13 @@ import { dynasty } from './utils/helper';
     const today = new Date();
     const resources = [
         {
+            name: "TripleCrown",
+            url: "https://sengi12.github.io/triplecrown",
+            icon: "crown",
+            premium: false,
+            separator: true,
+        },
+        {
             name: "FTN Fantasy",
             url: "https://www.ftnfantasy.com/nfl",
             icon: "insights",
@@ -148,7 +155,7 @@ import { dynasty } from './utils/helper';
                 <a target="_blank" href="{resource.url}">
                     <Item>
                         {#if resource.icon}
-                            <Graphic class="material-icons">{resource.icon}</Graphic>
+                            <Graphic class="material-symbols-outlined">{resource.icon}</Graphic>
                         {/if}
                         <Text class="linkText">{resource.name}{resource.premium ? "*" : ""}</Text>
                     </Item>
@@ -160,7 +167,7 @@ import { dynasty } from './utils/helper';
                 <a target="_blank" href="{resource.url}">
                     <Item>
                         {#if resource.icon}
-                            <Graphic class="material-icons">{resource.icon}</Graphic>
+                            <Graphic class="material-symbols-outlined">{resource.icon}</Graphic>
                         {/if}
                         <Text class="linkText">{resource.name}{resource.premium ? "*" : ""}</Text>
                     </Item>
@@ -172,7 +179,7 @@ import { dynasty } from './utils/helper';
                 <a target="_blank" href="{resource.url}">
                     <Item>
                         {#if resource.icon}
-                            <Graphic class="material-icons">{resource.icon}</Graphic>
+                            <Graphic class="material-symbols-outlined">{resource.icon}</Graphic>
                         {/if}
                         <Text class="linkText">{resource.name}{resource.premium ? "*" : ""}</Text>
                     </Item>
